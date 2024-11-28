@@ -17,9 +17,14 @@ public class Book {
     }
 
     public boolean hasAuthor(String nif){
+        boolean hasAuthor = false;
         for (Autor autor: autores){
-            if (autor )
+            if (autor.getNif().equals(nif)){
+                hasAuthor = true;
+                break;
+            }
         }
+        return hasAuthor;
     }
 
     public String getIsbn() {
